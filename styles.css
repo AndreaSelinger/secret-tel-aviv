@@ -1,15 +1,183 @@
-body { 
-    background-color: red; 
+*{
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    font-family: BEBAS;
+}
+
+h3 {
+    font-family: BEBAS;
 }
 
 nav {
-    background-color:rgb(51, 51, 51);
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 60;
 }
 
-.hero-image { 
-    width: 100%; 
+nav ul {
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+  nav li a { 
+    font-family: BEBAS;
+    line-height: 50px;
+    text-decoration: none;
+    color: #EFEAEA;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 18px;
 }
 
 li:first-child { 
     color: green; 
 }
+
+.hero-image { 
+    width: 30%; 
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.food h1 {
+    padding: 20px;
+    display:inline-block;
+    margin: 0;
+    background-color: grey;
+    font-family: BEBAS;
+    text-align: center;
+    font-weight: bold;
+    padding: 25px;
+}
+      
+.food h3 {
+    padding: 20px;
+    display:inline-block;
+    text-align: center;
+    font-weight: bold;
+    background-color: grey;
+    font-family: BEBAS;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+      
+.food section {
+    display:inline-block;
+    background-color: #ddd;
+}
+
+.column {
+    float: left;
+    width: 33.333%;
+}
+
+.column-inner {
+    padding: 20px;
+}
+
+.food img {
+    width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    background-color: grey;
+    padding:0px;
+    margin-top: 10px; 
+}
+
+#height-crop {
+    height: 160px;
+    overflow:hidden;   
+    position:relative;
+}
+
+#height-crop img {
+    position: absolute;
+    top: -60px;
+    left: -70px;
+}
+
+.column-70 {
+    width: 70%;
+    float: left;
+    height: 500px;
+    background-color: #FDFBFB;
+  }
+  
+.column-30 {
+    width: 30%;
+    float: left;
+    height: 500px;
+    background-color: #D4D2D2;
+}
+
+.column {
+    float: left;
+    width: 33.333%;
+}
+.responsive-circle {
+    display: inline-block;
+    font-family: BEBAS;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 auto 20px;
+    width: 80%;
+}
+.responsive-circle::after {
+    border: 3px solid #FFF;    
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 0;
+    margin-bottom: 20px;
+    padding-bottom: 100%;
+    width: 100%;
+}
+.responsive-circle div {
+    color: white;
+    float: left;
+    line-height: 1em;
+    margin-top: -0.5em;
+    padding-top: 50%;
+    text-align: center;
+    width: 100%;
+}
+
+.responsive-circle::after {
+    background: url("https://i.pinimg.com/736x/6d/59/89/6d598900c76d037dcc67525da8bfdcae.jpg") repeat scroll 0 0 / cover ;
+}
+
+.row:before {s
+    display: table;
+    content: "";
+  }
+  
+.row:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+html { 
+    background: url(https://cdn.theculturetrip.com/wp-content/uploads/2017/03/man-on-tel-aviv-beach-with-newspaper-650x428.jpg) no-repeat center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media (max-width: 700px) {
+    .column {
+      width: 100%;
+      font-size: 2em; 
+    }
+  }
